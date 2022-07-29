@@ -16,7 +16,7 @@
         {
           "name": "PING_IDENTITY_DEVOPS_USER",
           "label": "Ping devops user",
-          "description": "Ping devops user to use",
+          "description": "Ping devops user to use"
         },
         {
           "name": "PING_IDENTITY_DEVOPS_KEY",
