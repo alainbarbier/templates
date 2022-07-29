@@ -1,0 +1,41 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "type": 3,
+      "title": "PingDirectory",
+      "description": "PingDirectory",
+      "categories": ["Ping"],
+      "platform": "linux",
+      "logo": "",
+      "repository": {
+        "url": "https://192.168.56.2:1443/root/abdemos",
+        "stackfile": "ping/pd.yml"
+      },
+      "env": [
+        {
+          "name": "PING_IDENTITY_DEVOPS_USER",
+          "label": "Ping devops user",
+          "description": "Ping devops user to use",
+        },
+        {
+          "name": "PING_IDENTITY_DEVOPS_KEY",
+          "label": "Devops key",
+          "description": "Devops key"
+        },
+        {
+          "name": "SERVER_PROFILE_URL_REDACT",
+          "label": "redact",
+          "description": "redact",
+          "default": "false"
+        },
+        {
+          "name": "VERBOSE",
+          "label": "Verbose",
+          "description": "verbose",
+          "default": "true"
+        }
+      ]
+    }
+  ]
+}
