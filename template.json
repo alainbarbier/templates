@@ -3,6 +3,79 @@
   "templates": [
     {
       "type": 3,
+      "title": "PingFederate and PingDirectory",
+      "description": "PingFederate and PingDirectory",
+      "categories": ["Ping"],
+      "platform": "linux",
+      "logo": "https://itcentralstation-res.cloudinary.com/image/upload/c_scale,f_auto,q_auto,w_80/n7B55rWrzpwD5Rv9kymepC5M.png",
+      "repository": {
+        "url": "https://192.168.56.2:1443/root/abdemos",
+        "stackfile": "ping/pf-pd.yml"
+      },
+      "env": [
+        {
+          "name": "PING_IDENTITY_DEVOPS_USER",
+          "label": "Ping devops user",
+          "description": "Ping devops user to use"
+        },
+        {
+          "name": "PING_IDENTITY_DEVOPS_KEY",
+          "label": "Devops key",
+          "description": "Devops key"
+        },
+        {
+          "name": "SERVER_PROFILE_URL_REDACT",
+          "label": "redact",
+          "description": "redact",
+          "default": "false"
+        },
+        {
+          "name": "VERBOSE",
+          "label": "Verbose",
+          "description": "verbose",
+          "default": "true"
+        }
+      ]
+		},
+    {
+      "type": 3,
+      "title": "PingFederate",
+      "description": "PingFederate",
+      "categories": ["Ping"],
+      "platform": "linux",
+      "logo": "https://itcentralstation-res.cloudinary.com/image/upload/c_scale,f_auto,q_auto,w_80/n7B55rWrzpwD5Rv9kymepC5M.png",
+      "repository": {
+        "url": "https://192.168.56.2:1443/root/abdemos",
+        "stackfile": "ping/pf.yml"
+      },
+      "env": [
+        {
+          "name": "PING_IDENTITY_DEVOPS_USER",
+          "label": "Ping devops user",
+          "description": "Ping devops user to use"
+        },
+        {
+          "name": "PING_IDENTITY_DEVOPS_KEY",
+          "label": "Devops key",
+          "description": "Devops key"
+        },
+        {
+          "name": "SERVER_PROFILE_URL_REDACT",
+          "label": "redact",
+          "description": "redact",
+          "default": "false"
+        },
+        {
+          "name": "VERBOSE",
+          "label": "Verbose",
+          "description": "verbose",
+          "default": "true"
+        }
+      ]
+    },
+    },
+    {
+      "type": 3,
       "title": "PingDirectory",
       "description": "PingDirectory",
       "categories": ["Ping"],
